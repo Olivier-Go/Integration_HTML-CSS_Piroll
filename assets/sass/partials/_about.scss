@@ -1,0 +1,38 @@
+.about {
+    padding: 6.2rem $gutter;
+    text-align: center;
+
+    &__title {
+        font-family: $titleFont;
+        font-size: 1.875em;
+    }
+
+    &__text {
+        font-size: 1em;
+        color: $textColor;
+        margin: 2.2rem 0;
+        line-height: 1.75;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .banner__wrapper {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .banner__wrapper {
+        width: 100%;
+    }
+    .navbar__menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .about {
+        padding: 6.2rem $gutter/3;
+    }
+}

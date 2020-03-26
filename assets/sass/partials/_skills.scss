@@ -1,0 +1,82 @@
+.skills {
+    background: no-repeat url("assets/img/background2.jpg");
+    background-size: cover;
+
+    & > section {
+        background-color: rgba($secondaryColor, .92);
+        width: 50%;
+        padding: 10.31rem $gutter 7.75rem $gutter;
+    }
+
+    &__title {
+        font-family: $titleFont;
+        font-size: 1.875em;
+    }
+
+    &__list {
+        font-family: $titleFont;;
+        font-size: .75em;
+        margin: 2.2rem 0;
+        line-height: 1.75;
+
+        & > label {
+            text-transform: uppercase;
+            letter-spacing: .06em;
+
+            & > span {
+                margin-left: 1.125em;
+            }
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+progress {
+    display: block;
+    width: 100%;
+    margin: 1.25rem 0 2.5rem 0;
+    border: none;
+    background: $primaryColor;
+
+    &::-moz-progress-bar {
+        background: $altColor;
+    }
+    &::-webkit-progress-bar {
+        background: transparent;
+    }
+    &::-webkit-progress-value {
+        background: $altColor;
+    }
+}
+/* webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    progress {
+        height: 3px;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .skills > section {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .skills > section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .skills > section {
+        padding: 10.31rem $gutter/3 7.75rem $gutter/3;
+    }
+    .skills__title {
+        text-align: center;
+    }
+}
